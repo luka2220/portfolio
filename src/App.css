@@ -1,0 +1,12 @@
+.image-bg {
+  margin: 0;
+  padding: 0;
+
+  height: 100vh;
+
+  /** background image */
+  background-image: url("./assets/Background.jpeg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}

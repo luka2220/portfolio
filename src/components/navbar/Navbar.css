@@ -1,0 +1,10 @@
+.sticky-top {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 50;
+}
+
+.transparent-bg {
+  background-color: rgba(7, 15, 43, 0.5);
+}
