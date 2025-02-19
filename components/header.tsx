@@ -15,7 +15,7 @@ export default function Header() {
   return (
     <header>
       <div>
-        <h1>Portoflio</h1>
+        <h1></h1>
       </div>
       <div>
         <DynamicIcon name={theme} onClick={updateTheme} />
