@@ -1,24 +1,23 @@
 'use client';
 
 import { DynamicIcon } from 'lucide-react/dynamic';
-import React, { useState } from 'react';
-
-type Theme = 'sun' | 'moon';
+import { useTheme } from './themeProvider';
 
 export default function Header() {
-  const [theme, setTheme] = useState<Theme>('sun');
+  const { theme, setTheme } = useTheme();
 
   function updateTheme() {
-    setTheme((prevTheme) => (prevTheme === 'sun' ? 'moon' : 'sun'));
+    setTheme(theme === 'moon' ? 'sun' : 'moon');
   }
 
   return (
     <header>
       <div>
-        <h1></h1>
-      </div>
-      <div>
-        <DynamicIcon name={theme} onClick={updateTheme} />
+        <DynamicIcon
+          className="stroke-gray-800 dark:stroke-light"
+          name={theme}
+          onClick={updateTheme}
+        />
       </div>
     </header>
   );
