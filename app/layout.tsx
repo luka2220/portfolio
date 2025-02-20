@@ -1,5 +1,6 @@
 'use client';
 
+import Header from '@/components/header/header';
 import './globals.css';
 import { ThemeProvider, useTheme } from '@/components/themeProvider';
 
@@ -24,7 +25,8 @@ function Root({
 
   return (
     <html lang="en" className={theme === 'moon' ? 'dark' : ''}>
-      <body className="bg-light dark:bg-gray-800 mt-4 ml-5">
+      <body className="bg-light dark:bg-gray-800">
+        <Header />
         {children}
       </body>
     </html>
