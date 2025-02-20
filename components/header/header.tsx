@@ -1,5 +1,7 @@
 import Link from 'next/link';
 import HeaderThemeToggle from './headerThemeToggle';
+import { HeaderGithubIcon } from './headerGithubIcon';
+import { HeaderLinkedinIcon } from './headerLinkedinIcon';
 
 export default function Header() {
   return (
@@ -13,6 +15,16 @@ export default function Header() {
         <div className="flex justify-end gap-6 px-16">
           <Link href={'/blog'}>
             <p>Blog</p>
+          </Link>
+          <Link
+            href={
+              'https://www.linkedin.com/in/luka-piplica-1b5028185/'
+            }
+          >
+            <HeaderLinkedinIcon />
+          </Link>
+          <Link href={'https://github.com/luka2220'}>
+            <HeaderGithubIcon />
           </Link>
           <HeaderThemeToggle />
         </div>

@@ -10,10 +10,12 @@ export default function HeaderThemeToggle() {
     setTheme(theme === 'moon' ? 'sun' : 'moon');
   }
   return (
-    <DynamicIcon
-      className="  stroke-gray-800 dark:stroke-light"
-      name={theme}
-      onClick={updateTheme}
-    />
+    <>
+      <DynamicIcon
+        className="  stroke-gray-800 dark:stroke-light"
+        name={theme}
+        onClick={updateTheme}
+      />
+    </>
   );
 }
