@@ -1,8 +1,13 @@
-'use client';
-
-import Header from '@/components/header/header';
 import './globals.css';
-import { ThemeProvider, useTheme } from '@/components/themeProvider';
+import { ThemeProvider } from '@/components/themeProvider';
+import { Metadata } from 'next';
+import Root from './rootComponent';
+
+export const metadata: Metadata = {
+  title: 'Luka Piplica Portfolio',
+  description:
+    'Portfolio site for showcasing my projects, skills, and articles',
+};
 
 export default function RootLayout({
   children,
@@ -13,22 +18,5 @@ export default function RootLayout({
     <ThemeProvider>
       <Root>{children}</Root>
     </ThemeProvider>
-  );
-}
-
-function Root({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
-  const { theme } = useTheme();
-
-  return (
-    <html lang="en" className={theme === 'moon' ? 'dark' : ''}>
-      <body className="bg-light dark:bg-gray-800">
-        <Header />
-        {children}
-      </body>
-    </html>
   );
 }

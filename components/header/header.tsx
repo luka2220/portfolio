@@ -2,6 +2,7 @@ import Link from 'next/link';
 import HeaderThemeToggle from './headerThemeToggle';
 import { HeaderGithubIcon } from './headerGithubIcon';
 import { HeaderLinkedinIcon } from './headerLinkedinIcon';
+import { Rss } from 'lucide-react';
 
 export default function Header() {
   return (
@@ -14,16 +15,17 @@ export default function Header() {
       <div className="flex-1">
         <div className="flex justify-end gap-6 px-16">
           <Link href={'/blog'}>
-            <p>Blog</p>
+            <Rss className="stroke-gray-800 dark:stroke-light" />
           </Link>
           <Link
             href={
               'https://www.linkedin.com/in/luka-piplica-1b5028185/'
             }
+            target="_blank"
           >
             <HeaderLinkedinIcon />
           </Link>
-          <Link href={'https://github.com/luka2220'}>
+          <Link href={'https://github.com/luka2220'} target="_blank">
             <HeaderGithubIcon />
           </Link>
           <HeaderThemeToggle />
