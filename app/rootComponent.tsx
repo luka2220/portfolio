@@ -2,6 +2,9 @@
 
 import { useTheme } from '@/components/themeProvider';
 import Header from '@/components/header/header';
+import { Rubik } from 'next/font/google';
+
+const rubik = Rubik({ subsets: ['latin'] });
 
 export default function Root({
   children,
@@ -12,7 +15,9 @@ export default function Root({
 
   return (
     <html lang="en" className={theme === 'moon' ? 'dark' : ''}>
-      <body className="bg-light dark:bg-gray-800">
+      <body
+        className={`m-auto max-w-6xl bg-light dark:bg-gray-800 ${rubik.className}`}
+      >
         <Header />
         {children}
       </body>

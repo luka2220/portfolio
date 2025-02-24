@@ -7,7 +7,22 @@
 
 @layer base {
   h1 {
+    @apply text-3xl;
+    @apply text-gray-800 dark:text-light;
+  }
+
+  h2 {
     @apply text-2xl;
+    @apply text-gray-800 dark:text-light;
+  }
+
+  h3 {
+    @apply text-xl;
+    @apply text-gray-800 dark:text-light;
+  }
+
+  p {
+    @apply text-gray-800 dark:text-light;
   }
 }
 
