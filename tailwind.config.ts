@@ -11,6 +11,7 @@ export default {
     extend: {
       colors: {
         light: '#F4F8D3',
+        name: '#60a5fa',
         background: 'var(--background)',
         foreground: 'var(--foreground)',
       },

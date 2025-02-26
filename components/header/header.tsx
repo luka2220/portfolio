@@ -11,7 +11,7 @@ export default function Header() {
     <header className="flex mt-8">
       <div className="flex-1">
         <Link href={'/'}>
-          <h1>Luka Piplica</h1>
+          <h2>Luka Piplica</h2>
         </Link>
       </div>
       <div className="flex-1">
