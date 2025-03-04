@@ -4,3 +4,9 @@
 
 /* Dark mode theme */
 @custom-variant dark (&:where(.dark, *.dark));
+
+@layer utilities {
+  .para-text {
+    @apply text-xl sm:text-xl md:text-2xl leading-[1.45] text-gray-800 dark:text-gray-400;
+  }
+}
