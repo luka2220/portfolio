@@ -4,28 +4,3 @@
 
 /* Dark mode theme */
 @custom-variant dark (&:where(.dark, *.dark));
-
-@layer base {
-  h1 {
-    @apply text-6xl;
-    @apply text-gray-800 dark:text-light;
-  }
-
-  h2 {
-    @apply text-4xl;
-    @apply text-gray-800 dark:text-light;
-  }
-
-  h3 {
-    @apply text-3xl;
-    @apply text-gray-800 dark:text-light;
-  }
-
-  p {
-    @apply text-gray-800 dark:text-light;
-  }
-}
-
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
