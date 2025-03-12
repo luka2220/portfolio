@@ -4,7 +4,7 @@ import { Metadata } from 'next';
 import Root from './rootComponent';
 
 export const metadata: Metadata = {
-  title: 'Luka Piplica Portfolio',
+  title: 'Luka Piplica',
   description:
     'Portfolio site for showcasing my projects, skills, and articles',
 };

@@ -16,7 +16,7 @@ export default function Root({
   return (
     <html lang="en" className={theme === 'moon' ? 'dark' : ''}>
       <body
-        className={`m-auto max-w-6xl bg-light dark:bg-gray-800 ${rubik.className}`}
+        className={`m-auto max-w-[75%] bg-light dark:bg-gray-800 ${rubik.className}`}
       >
         <Header />
         {children}

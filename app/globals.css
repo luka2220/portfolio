@@ -7,6 +7,6 @@
 
 @layer utilities {
   .para-text {
-    @apply text-xl sm:text-xl md:text-2xl leading-[1.45] text-gray-800 dark:text-gray-400;
+    @apply text-xl sm:text-xl md:text-2xl text-gray-800 dark:text-gray-400;
   }
 }
