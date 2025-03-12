@@ -6,12 +6,12 @@ import githubIconDark from '@/assets/github-icon-dark.svg';
 
 import { useTheme } from '../themeProvider';
 
-export function HeaderGithubIcon({ className }: { className: string }) {
+export function HeaderGithubIcon({ className }: { className?: string }) {
   const { theme } = useTheme();
 
   return (
     <Image
-      className={className}
+      className={className ? className : undefined}
       priority
       src={theme === 'moon' ? githubIconLight : githubIconDark}
       alt="github link icon"
